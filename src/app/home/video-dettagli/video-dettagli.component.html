@@ -1,1 +1,17 @@
 <p>video-dettagli works!</p>
+
+<div ngbAccordion>
+	<div ngbAccordionItem  [collapsed]="showParagrafo"  >
+		<h2 ngbAccordionHeader >
+			<button ngbAccordionButton (click)="cambio()">Mostra paragrafo</button>
+
+		</h2>
+		<div ngbAccordionCollapse >
+			<div ngbAccordionBody  >
+				<ng-template >
+					qui ci saranno i dettagli dei video
+				</ng-template>
+			</div>
+		</div>
+	</div>
+    
